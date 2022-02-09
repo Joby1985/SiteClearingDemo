@@ -29,7 +29,6 @@ If they are given as command line, then the first argument would be Sitemap data
 Method 1: Manually inputting data
 
 
-
 ```
 $ java -jar build/libs/SiteClearingSimulation.jar
 
@@ -81,6 +80,36 @@ paint damage to bulldozer                                                       
 -------------------
 Total                                                                                                                     139
 
+```
+
+Method 2: Run with the path of the sitemap data. (This sample has simulation exit example)
+
+```
+java -jar build/libs/SiteClearingSimulation.jar src/main/resources/data.txt
+
+
+Welcome to the Aconex site clearing simulator. This is a map of the site:
+
+o o t o o o o o o o
+o o o o o o o T o o
+r r r o o o o T o o
+r r r r o o o o o o
+r r r r r t o o o o
+
+
+The bulldozer is currently located at the Northern edge of the site, immediately to the West of the site, and facing East.
+
+Enter the commands for simulation, press q/quit to end:
+(l)eft, (r)ight, (a)dvance <n>, (q)uit:
+a 4
+(l)eft, (r)ight, (a)dvance <n>, (q)uit:
+r
+(l)eft, (r)ight, (a)dvance <n>, (q)uit:
+a 5
+(l)eft, (r)ight, (a)dvance <n>, (q)uit:
+q
+
+Aborting this simulation : Going out of bound of the site.. Simulation will stop.
 ```
 
 Logging:
